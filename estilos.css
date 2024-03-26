@@ -1,0 +1,63 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.pregunta {
+    color: #7B68EE; /* Un tono entre azul y morado */
+    font-size: 2em; /* Usa em para escalar mejor según el tamaño del dispositivo */
+}
+
+.boton {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em; /* Aumenta el tamaño del texto para una mejor legibilidad en dispositivos táctiles */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s; /* Suaviza el movimiento del botón No */
+}
+
+.si {
+    background-color: #00FF00;
+}
+
+.no {
+    background-color: #FF0000;
+}
+
+/* Media queries para ajustar según el tamaño de la pantalla */
+@media (max-width: 768px) {
+    .pregunta {
+        font-size: 1.5em;
+    }
+    
+    .boton {
+        padding: 15px 30px;
+        margin: 10px; /* Reduce el espacio en pantallas pequeñas */
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .pregunta {
+        font-size: 1.2em;
+    }
+    
+    .boton {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
